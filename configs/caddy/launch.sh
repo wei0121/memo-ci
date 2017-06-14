@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/usr/bin/expect
 set timeout 5
 spawn caddy -conf /memo/configs/caddy/Caddyfile
-expect "(A)gree/(C)ancel: " { send "a\n" }
+expect "Email address: " { send "williamtse0121@gmail.com\n" }
 interact

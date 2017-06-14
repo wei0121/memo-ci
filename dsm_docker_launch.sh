@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir -p /volume1/docker/container_data/configs
 mkdir -p /volume1/docker/container_data/logs
 
