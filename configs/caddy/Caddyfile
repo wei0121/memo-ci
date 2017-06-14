@@ -1,4 +1,4 @@
-xwrhome.ddns.net {
+https://xwrhome.ddns.net:8888 {
     root /memo/configs/caddy/www
     ext .html .htm .php
     log  /memo/logs/caddy/localhost.log {
