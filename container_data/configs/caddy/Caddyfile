@@ -1,0 +1,18 @@
+localhost:80 {
+    root /memo/configs/caddy/www
+    ext .html .htm .php
+    log  /memo/logs/caddy/localhost.log {
+    	rotate_size 5 # Rotate after 50 MB
+    	rotate_age  90 # Keep rotated files for 90 days
+    	rotate_keep 20 # Keep at most 20 log files
+    }
+    errors  /memo/logs/caddy/error.log {
+    	rotate_size 5 # Rotate after 50 MB
+    	rotate_age  90 # Keep rotated files for 90 days
+    	rotate_keep 20 # Keep at most 20 log files
+    }
+    index index.html index.htm
+    gzip
+    proxy /helloworlds memo-myhelloworld:8484
+    proxy /registry memo-registry:5000
+}
