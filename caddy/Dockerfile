@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y curl \
 # RUN chmod u=rwx /www/launch.sh
 ENTRYPOINT ["/memo/configs/caddy/launch.sh"]
 
-EXPOSE 80
+EXPOSE 80 443
