@@ -15,4 +15,5 @@ localhost:80 {
     gzip
     proxy /helloworld memo-myhelloworld:8484
     proxy /registry memo-registry:5000
+    tls williamtse0121@gmail.com
 }
