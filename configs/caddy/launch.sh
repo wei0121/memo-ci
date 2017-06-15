@@ -1,2 +1,2 @@
 #!/bin/sh
-caddy -conf /memo/configs/caddy/Caddyfile
+caddy -agree -log stdout -conf /memo/configs/caddy/Caddyfile
