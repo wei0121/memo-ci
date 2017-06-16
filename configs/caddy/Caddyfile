@@ -21,6 +21,6 @@ xwrhome.ddns.net {
   tls williamtse0121@gmail.com
 }
 
-xwrhome.ddns.net:5000 {
+localhost:5000 {
   proxy / memo-registry:5000
 }
