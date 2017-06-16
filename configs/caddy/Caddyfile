@@ -22,8 +22,5 @@ xwrhome.ddns.net {
 }
 
 xwrhome.ddns.net:5000 {
-  proxy /registry memo-registry:5000 {
-    without /registry
-    transparent
-  }
+  proxy / memo-registry:5000
 }
