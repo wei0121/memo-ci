@@ -28,7 +28,7 @@ cp -a `pwd`/configs/logs/. `pwd`/container_data/logs/
 chmod u=rwx `pwd`/container_data/configs/caddy/launch.sh
 
 docker run -d --name memo-myhelloworld --volumes-from=memo-volume memo-myhelloworld
-docker run -d --name memo-registry --volumes-from=memo-volume memo-registry
+docker run -d --name memo-registry -e STORAGE_PATH=/memo/configs/registry --volumes-from=memo-volume memo-registry
 docker run -d --name memo-caddy \
   -p 80:80 -p 443:443 \
   --link memo-myhelloworld:memo-myhelloworld \
