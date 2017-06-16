@@ -5,6 +5,7 @@ mkdir -p /volume1/docker/container_data/logs
 chown -R 1000:1000 /volume1/docker/container_data/configs
 chown -R 1000:1000 /volume1/docker/container_data/logs
 
+# launch.sh
 docker build -t memo-volume ./volume
 docker build -t memo-caddy ./caddy
 docker build -t memo-myhelloworld ./myHelloWorld
