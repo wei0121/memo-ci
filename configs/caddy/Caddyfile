@@ -1,4 +1,4 @@
-localhost:80 {
+http://xwrhome.ddns.net {
 
   proxy /helloworld memo-myhelloworld:8484 {
     transparent
@@ -21,6 +21,8 @@ localhost:80 {
   tls williamtse0121@gmail.com
 }
 
-localhost:5000 {
-  proxy / memo-registry:5000
+http://xwrhome.ddns.net:5000 {
+  proxy / memo-registry:5000 {
+    transparent
+  }
 }
