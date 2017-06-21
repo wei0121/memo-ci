@@ -1,4 +1,4 @@
-http://xwrhome.ddns.net {
+xwrhome.ddns.net {
 
   proxy /helloworld memo-myhelloworld:8484 {
     transparent
