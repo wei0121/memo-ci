@@ -16,8 +16,8 @@ docker run -d \
   -v /volume1/docker/container_data/logs:/memo/logs \
   --name memo-volume memo-volume
 
-cp -a ./configs/. /volume1/docker/container_data/configs/
-cp -a ./logs/. /volume1/docker/container_data/logs/
+cp -af ./configs/. /volume1/docker/container_data/configs/
+cp -af ./logs/. /volume1/docker/container_data/logs/
 chmod u=rwx /volume1/docker/container_data/configs/caddy/launch.sh
 
 docker run -d --name memo-myhelloworld --volumes-from=memo-volume memo-myhelloworld
