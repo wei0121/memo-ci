@@ -1,0 +1,6 @@
+{
+	"domain": "xwrhome.ddns.net",
+	"certUrl": "https://acme-v01.api.letsencrypt.org/acme/cert/04d7d613834dd6424397be971066e2400a3e",
+	"certStableUrl": "",
+	"accountRef": "https://acme-v01.api.letsencrypt.org/acme/reg/17958258"
+}

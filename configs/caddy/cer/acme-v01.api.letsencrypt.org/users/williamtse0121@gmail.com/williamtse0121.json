@@ -1,0 +1,22 @@
+{
+	"Email": "williamtse0121@gmail.com",
+	"Registration": {
+		"body": {
+			"resource": "reg",
+			"id": 17958258,
+			"key": {
+				"kty": "EC",
+				"crv": "P-384",
+				"x": "ec5LJVn8S1y6Xsahrhe2_unyGSD48pJrKS8U1hPPFBuhXVbhvP9U8xqI5x81JJIa",
+				"y": "Z_EK-B6IfVZg5qKNNIa0Ly-i_ig92Z_WUk7GnAx44Tk6q-6QAXtDiLm-31u21eXl"
+			},
+			"contact": [
+				"mailto:williamtse0121@gmail.com"
+			],
+			"agreement": "https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf"
+		},
+		"uri": "https://acme-v01.api.letsencrypt.org/acme/reg/17958258",
+		"new_authzr_uri": "https://acme-v01.api.letsencrypt.org/acme/new-authz",
+		"terms_of_service": "https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf"
+	}
+}

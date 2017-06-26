@@ -18,11 +18,14 @@ xwrhome.ddns.net {
   }
   index index.html index.htm
   gzip
-  tls williamtse0121@gmail.com
+  # tls williamtse0121@gmail.com
+  tls /root/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xwrhome.ddns.net/xwrhome.ddns.net.crt /root/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xwrhome.ddns.net/xwrhome.ddns.net.key
+
 }
 
-http://xwrhome.ddns.net:5000 {
+https://xwrhome.ddns.net:5000 {
   proxy / memo-registry:5000 {
     transparent
   }
+  tls /root/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xwrhome.ddns.net/xwrhome.ddns.net.crt /root/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xwrhome.ddns.net/xwrhome.ddns.net.key
 }
