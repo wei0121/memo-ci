@@ -27,5 +27,6 @@ https://xwrhome.ddns.net:5000 {
   proxy / memo-registry:5000 {
     transparent
   }
+  basicauth / memo xwr
   tls /root/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xwrhome.ddns.net/xwrhome.ddns.net.crt /root/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xwrhome.ddns.net/xwrhome.ddns.net.key
 }
